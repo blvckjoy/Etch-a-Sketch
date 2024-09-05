@@ -16,11 +16,26 @@ function createGrid(size) {
     div.classList.add("grid-item");
     div.style.height = `${itemSize}px`;
     div.style.width = `${itemSize}px`;
+
+    // hover effect to change color
+    div.addEventListener("mouseover", e => {
+      e.target.style.backgroundColor = getRandomColor();
+    });
     container.appendChild(div);
   }
 }
 createGrid(gridSize);
 
+// generate a random color
+function getRandomColor() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
+// click event handler
 resizeBtn.addEventListener("click", () => {
   let newSize = Number(
     prompt("Enter the number of squares per side for the new grid.")
