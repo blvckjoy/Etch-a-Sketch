@@ -2,7 +2,7 @@
 
 ## Description
 
-The Etch-a-Sketch game is a web-based drawing pad that allows users to draw on a grid of square divs. The grid can be dynamically resized based on user input. This project demonstrates the use of HTML, CSS, and JavaScript to create an interactive drawing tool with flexbox.
+The Etch-a-Sketch game is a web-based drawing pad that allows users to draw on a grid of square divs. The grid can be dynamically resized based on user input and each grid item will change to a random color when hovered over. This project demonstrates the use of HTML, CSS, and JavaScript to create an interactive drawing tool with flexbox.
 
 ## Features
 
