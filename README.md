@@ -2,24 +2,21 @@
 
 ## Description
 
-The Etch-a-Sketch game is a web-based drawing pad that allows users to draw on a grid of square divs. The grid can be dynamically resized based on user input and each grid item will change to a random color when hovered over. This project demonstrates the use of HTML, CSS, and JavaScript to create an interactive drawing tool with flexbox.
+The Etch-a-Sketch game is a web-based drawing pad that allows users to draw on a grid of square divs. The grid can be dynamically resized based on user input. To draw, click and drag your mouse over the grid cells. This project demonstrates the use of HTML, CSS, and JavaScript to create an interactive drawing tool with flexbox.
 
 ## Features
 
-- **Dynamic Grid**: Create a 16x16 grid of square divs initially, which can be resized to any number of squares per side.
+-  Create a customizable grid (up to 100x100)
+-  Draw on the grid by clicking and dragging the mouse
+-  Each cell changes to a random color when drawn on
+-  Reset the grid to its initial state
+-  Responsive design that maintains a consistent overall grid size
 
-- **Responsive Design**: The grid size adjusts to fit within a fixed container width of 960px.
+## Key Functions
 
-## Explanation
-
-- The button triggers a prompt for the new grid size.
-
-- The div with id="grid-container" will hold the grid items.
-
-- The #grid-container uses Flexbox to align grid items.
-
-- .grid-item styles each grid cell, setting the border and hover effects.
-
-- createGrid(size): Creates a grid based on the provided size, adjusting each cell's dimensions to fit within the container.
-
-- resizeButton Event Listener: Prompts the user for a new grid size, validates the input, and regenerates the grid.
+-  `createGrid(size)`: Creates a new grid with the specified size
+-  `getRandomColor()`: Generates a random RGB color
+-  Event listeners for:
+   -  Creating a new grid
+   -  Resetting the grid
+   -  Handling mouse events for drawing
